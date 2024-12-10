@@ -10,24 +10,31 @@
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
         }
         .header {
             background-color: #007bff;
             color: white;
-            padding: 30px 0;
-            background-image: url('https://via.placeholder.com/1500x400.png?text=LogPlot+Header');
+            padding: 60px 0;
+            background-image: url('https://lh5.googleusercontent.com/proxy/QFlnJmDFw7Hy1Vqj6he77Yu8K0i0Vh56hJAteA0fI4xihrJHq_e__fqm4jNgTWJw0_Ymk2FXQ7OffT2xKW0HDp-fbwx-PemG');
             background-size: cover;
             background-position: center;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: 700;
+        }
+        .header p {
+            font-size: 1.5em;
         }
         .main-content {
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            padding: 40px;
             margin-top: -60px;
             z-index: 10;
             position: relative;
@@ -36,6 +43,9 @@
             background-color: #28a745;
             color: white;
             font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .btn-custom:hover {
             background-color: #218838;
@@ -43,8 +53,24 @@
         footer {
             background-color: #007bff;
             color: white;
-            padding: 15px;
+            padding: 20px;
+            text-align: center;
             margin-top: 40px;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -56,18 +82,23 @@
     <div class="container">
         <div class="main-content">
             <h2 class="text-center">What's LogPlot?</h2>
-            <p>The tool that is designed to streamline the process of parsing large-scale log files and visualizing the extracted data in a meaningful way.</p>
+            <p>LogPlot is designed to streamline the process of parsing large-scale log files and visualizing the extracted data in a meaningful way.</p>
             <p>LogPlotter provides an intuitive interface and powerful tools for real-time analysis, helping developers and system administrators quickly identify and respond to system anomalies, performance bottlenecks, and security threats.</p>
+            <h3 class="text-center">Key Features:</h3>
+            <ul class="feature-list text-center">
+                <li>Real-time log file parsing</li>
+                <li>Interactive data visualization</li>
+                <li>Customizable alerts for anomalies</li>
+                <li>User-friendly interface</li>
+                <li>Cross-platform compatibility</li>
+            </ul>
             <p class="text-center">
                 <a href="https://drive.google.com/drive/folders/1iVa0e4ICWA7PRp2hhadTOk3c7nr6RgXd?usp=sharing" class="btn btn-custom btn-lg" download>Download LogPlot V1</a>
             </p>
         </div>
     </div>
-    <footer class="text-center">
-        <p>&copy; 2024 LogPlot. All rights reserved.</p>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
