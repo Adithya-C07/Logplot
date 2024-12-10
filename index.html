@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>LogPlot</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,52 +12,58 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background-color: #007bff;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
         h1 {
             margin: 0;
             font-size: 2.5em;
+            font-weight: 700;
         }
         main {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            margin: 40px auto;
+            padding: 30px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         p {
-            line-height: 1.6;
-            margin: 15px 0;
+            margin: 20px 0;
+            font-size: 1.1em;
         }
         a {
             display: inline-block;
-            margin: 20px 0;
-            padding: 15px 25px;
+            margin: 30px 0;
+            padding: 15px 30px;
             background-color: #28a745;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
             font-weight: bold;
+            text-align: center;
         }
         a:hover {
             background-color: #218838;
+            transform: translateY(-2px);
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #007bff;
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -66,12 +72,13 @@
         <h1>LogPlot</h1>
     </header>
     <main>
-        <p>This page contains a downloadable executable file.</p>
-        <p>LogPlotter is designed to streamline the process of parsing large-scale log files and visualizing the extracted data in a meaningful way. 
-            It provides an intuitive interface and powerful tools for real-time analysis, helping developers and system administrators to quickly identify and respond to system anomalies, performance bottlenecks, and security threats. 
-            You can download it using the link below:</p>
-        <a href="https://drive.google.com/drive/folders/1iVa0e4ICWA7PRp2hhadTOk3c7nr6RgXd?usp=sharing" download>Download Logplot</a>
+        <p>Welcome to the LogPlot page! This tool is designed to streamline the process of parsing large-scale log files and visualizing the extracted data in a meaningful way.</p>
+        <p>LogPlotter provides an intuitive interface and powerful tools for real-time analysis, helping developers and system administrators quickly identify and respond to system anomalies, performance bottlenecks, and security threats.</p>
+        <p>You can download it using the link below:</p>
+        <a href="https://drive.google.com/drive/folders/1iVa0e4ICWA7PRp2hhadTOk3c7nr6RgXd?usp=sharing" download>Download LogPlot V1</a>
     </main>
-   
+    <footer>
+        &copy; 2024 LogPlot. All rights reserved.
+    </footer>
 </body>
 </html>
